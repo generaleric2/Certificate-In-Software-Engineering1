@@ -1,0 +1,68 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+  link(rel='stylesheet' href='/css/register.css')
+  title GENQ FORM
+.card(style= 'margin-top: 2%; margin-left: 70px; background-color: white; border-radius: 5px; box-shadow: 0.5px 2px 10px rgba(0, 0, 0, 0.3); width: 800px; display: flex; justify-content: center;')
+  .card-header
+    .card-title(style= 'font-weight: bold; background-color: black; color: white; font-size: 40px; text-align: center;')
+      p GENQ KYC FORM
+      .card-body(style= 'background-color:white; text-align: left;')
+        form#regForm(action='/register' name='register' onsubmit='return Validate();' method='POST')
+          h2.text-muted Bio Data
+          hr.mt-1
+          .row.g-3
+            .col-md-6
+              input.form-control(type='text' placeholder='First name' aria-label='First name' name='firstname')
+              small#firstnameerr(style='color: red; font-weight: bold; font-size: small;')
+            .col-md-6
+              input.form-control(type='text' placeholder='last name' aria-label='lastName' name='lastname')
+              small#lastnameerr(style='color: red; font-weight: bold; font-size: small;')
+            .col-6
+              input.form-control(type='date' placeholder='Date of Birth' aria-label='dob' name='dateOfBirth')
+              small#emailerr(style='color: red; font-weight: bold; font-size: small;')
+            .col-md-6
+              select.form-select(name='gender')
+                option(selected='') Gender
+                option Male
+                option Female
+              small#gendererr(style='color: red; font-weight: bold; font-size: small;')
+            h2.text-muted Location
+            hr.mt-1
+            .col-md-6
+              select.form-select(name='country')
+                option(selected='') Country
+                option Uganda
+                option Kenya
+                option Tanzania
+                option Rwanda
+                option Burundi
+                option DRC
+                option South Sudan
+              small#warderr
+            .col-6
+              input.form-control(type='text' name='state' placeholder='State')
+              small#passworderr(style='color: red; font-weight: bold; font-size: small;')
+            .col-md-6
+              input.form-control(type='text' name='town' placeholder='Town')
+              small#doberr(style='color: red; font-weight: bold; font-size: small;')
+            .col-md-6
+              input.form-control(type='number' name='zipcode' placeholder='Zip code')
+              small#cfrmpwderr(style='color: red; font-weight: bold; font-size: small;')
+            h2.text-muted Contact and Address
+            hr.mt-1
+            .col-md-6
+              input.form-control(type='number' name='phone1' placeholder='Phone Number 1')
+              small#doberr(style='color: red; font-weight: bold; font-size: small;')
+            .col-md-6
+              input.form-control(type='number' name='phone2' placeholder='Phone Number 2')
+              small#cfrmpwderr(style='color: red; font-weight: bold; font-size: small;')
+            .col-md-12
+              input.form-control(type='text' name='email' placeholder='Email')
+              small#doberr(style='color: red; font-weight: bold; font-size: small;')
+          .col-12(style='margin-top: 20px;   display:block; border-radius:0px; box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2); margin-top:-5px; ')
+            button.btn.btn-primary(type='submit') REGISTER
+      script(src='/form.js')

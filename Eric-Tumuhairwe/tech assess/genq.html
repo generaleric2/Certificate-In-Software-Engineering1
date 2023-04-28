@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Eric-Tumuhairwe/tech assess/genq.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <header>Student Registration Form</header> -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                <p>GENQ KYC FORM</p>
+                <div class="card-body">
+                    <form  id="regForm" action="#" name="register" onsubmit="return Validate();" method="POST">
+				        <h2 class="text-muted">Bio Data</h2>
+                        <hr class="mt-1" />
+                        <div class="row g-3 ">
+                            <div class="col-md-6">
+                                <!-- <label for="firstName" class="form-label">Surname</label> -->
+                                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                <small id="firstnameerr" style="color: red; font-weight: bold; font-size: small;"></small>
+                              </div>
+                              <div class="col-md-6">
+                                <!-- <label for="lastName" class="form-label">Given Name</label> -->
+                                <input type="text" class="form-control" placeholder="last name" aria-label="lastName">
+                                <small id="lastnameerr" style="color: red; font-weight: bold; font-size: small;"></small>
+                              </div>
+                              <div class="col-6">
+                                <!-- <label for="email" class="form-label">Title</label> -->
+                                <input type="date" class="form-control" placeholder="Date of Birth" aria-label="dob">
+                                <small id="emailerr" style="color: red; font-weight: bold; font-size: small;"></small>
+                              </div>
+                            <div class="col-md-6">
+                                <!-- <input type="text" class="form-control" placeholder="Gender" aria-label="gender"> -->
+                                <select name="gender" class="form-select">
+                                  <option selected>Gender</option>
+                                  <option>Male</option>
+                                  <option>Female</option>
+                                </select>
+                                <small id="gendererr" style="color: red; font-weight: bold; font-size: small;"></small>
+                              </div>
+                              <h2 class="text-muted">Location</h2>
+                                <hr class="mt-1" />
+                                <div class="col-md-6">
+                                    <!-- <label for="ward" class="form-label">Date of Birth</label> -->
+                                    <!-- <input type="text" class="form-control" placeholder="Country" aria-label="First name"> -->
+                                    <select name="gender" class="form-select">
+                                        <option selected>Country</option>
+                                        <option>Uganda</option>
+                                        <option>Kenya</option>
+                                        <option>Tanzania</option>
+                                        <option>Rwanda</option>
+                                        <option>Burundi</option>
+                                        <option>DRC</option>
+                                        <option>South Sudan</option>
+                                      </select>
+                                    <small id="warderr"></small>
+                                  </div>
+                                  <div class="col-6">
+                                      <!-- <label for="password" class="form-label">Country</label> -->
+                                      <input type="text" class="form-control" name="State" placeholder="State">
+                                      <small id="passworderr" style="color: red; font-weight: bold; font-size: small;"></small>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <!-- <label for="dateb" class="form-label">Place Of Resid</label> -->
+                                        <input type="text" class="form-control" name="dateb" placeholder="Town">
+                                        <small id="doberr" style="color: red; font-weight: bold; font-size: small;"></small>
+                                        </div> 
+                                        <div class="col-md-6">
+                                            <!-- <label for="cfrmpassword" class="form-label">Nationality</label> -->
+                                            <input type="password" class="form-control" name="cfrmpassword"  placeholder="Zip code">
+                                            <small id="cfrmpwderr" style="color: red; font-weight: bold; font-size: small;"></small>
+                                      </div>
+                                      <h2 class="text-muted">Contact and Address</h2>
+                                        <hr class="mt-1" />
+
+                                      <div class="col-md-6">
+                                        <!-- <label for="dateb" class="form-label">Place Of Resid</label> -->
+                                        <input type="text" class="form-control" name="dateb" placeholder="Phone Number 1">
+                                        <small id="doberr" style="color: red; font-weight: bold; font-size: small;"></small>
+                                        </div> 
+                                        <div class="col-md-6">
+                                            <!-- <label for="cfrmpassword" class="form-label">Nationality</label> -->
+                                            <input type="password" class="form-control" name="cfrmpassword"  placeholder="Phone Number 2">
+                                            <small id="cfrmpwderr" style="color: red; font-weight: bold; font-size: small;"></small>
+                                      </div>
+                                      <div class="col-md-12">
+                                        <!-- <label for="dateb" class="form-label">Place Of Resid</label> -->
+                                        <input type="text" class="form-control" name="dateb" placeholder="Email">
+                                        <small id="doberr" style="color: red; font-weight: bold; font-size: small;"></small>
+                                        </div>
+                                </div>
+                            <div class="col-12" style="margin-top: 20px;">
+                                <button type="submit" class="btn btn-primary">REGISTER</button>
+                              
+                        </div>
+                        </div>
+                      </form>
+
+<script src="/form.js"></script>
+</body>
+</html>
